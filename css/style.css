@@ -80,10 +80,15 @@ nav .fa-phone {
 
 .styl-heroOverskrift {
   position: absolute;
-  color: #fff;
-  font-size: 30px;
-  bottom: 10em;
-  left: 10em;
+  color: #0F1C70;
+  background-color: #fff;
+  opacity: 70%;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 20px 0px 20px 10px;
+  font-size: 20px;
+  top: 15em;
+  left: 25em;
 }
 
 .styl-video {
@@ -91,4 +96,14 @@ nav .fa-phone {
   height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.styl-btn {
+  border: solid 1px #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 20px 60px 20px 60px;
+  background-color: #0F1C70;
+  color: #fff;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

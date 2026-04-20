@@ -10,12 +10,11 @@ $font:"national-park", sans-serif;
     align-items: $align;
 }
 
-@mixin btn($paddingL:15px, $paddingR:15px){
-    background-color: $primary-color;
+@mixin btn($pad:15px 10px 10px 10px){
     border: solid 1px $secondary-color;
-    border-radius: 10px;
+    border-radius: 30px;
     text-align: center;
-    padding-left: $paddingL;
-    padding-right: $paddingR;
+    padding: $pad;
+    
 }
 
