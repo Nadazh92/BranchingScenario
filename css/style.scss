@@ -1,0 +1,117 @@
+@use "partial";
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: partial.$bg-color;
+
+    p{
+        font-size: 18px;
+        color:partial.$primary-color;
+        line-height: 1.2;
+        
+        
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+    }
+
+}
+
+/*Skip to main content code snippet fra:https://www.a11y-collective.com/blog/skip-to-main-content/ */
+ 
+.screen-reader-text {
+    position: absolute; //Positions the link absolutely on the page, allowing it to be placed anywhere.
+    left: -9999px; //Moves the link far off-screen to the left, making it invisible to sighted users.
+    z-index: 999; //Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible.
+    padding: 1em;
+    background-color: black;
+    color: white;
+    opacity: 0; //Sets the link's opacity to 0, making it fully transparent and invisible.
+  }
+  
+  .screen-reader-text:focus {
+    left: 50%; // When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen.
+    transform: translateX(-50%); //This centres the link horizontally by moving it back to the left by 50% of its own width.
+    opacity: 1; //The link's opacity is set to 1, making it fully visible.
+  }
+
+
+nav{
+    @include partial.flex($justify:space-between);
+
+    p{
+        color: partial.$primary-color;
+        font-size: 25px;
+        margin-left: 5px;
+        font-weight: 700; 
+    }
+
+    ul{
+         @include partial.flex();
+         gap: 20px;
+         list-style-type: none;
+    }
+
+    li a{
+        text-decoration: none;
+        color: partial.$primary-color;
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    a:hover{
+      
+        border-bottom: solid 2px partial.$primary-color;
+    }
+
+    #bars{
+        display: none;
+    }
+
+    .styl-hotline{
+        text-decoration: none;
+        margin-right:7px;
+        background-color: partial.$primary-color;
+        color: partial.$secondary-color;
+        border: solid 2px partial.$primary-color;
+        border-radius: 20px;
+        padding: 10px 20px;
+    }
+
+    .styl-hotline:hover{
+        background-color: green;
+        
+    }
+
+    .fa-phone{
+        color: white;
+        padding-right: 10px;
+    }
+
+}
+
+
+.styl-heroOverskrift{
+    position:absolute;
+    color:partial.$secondary-color;
+    font-size: 30px;
+    bottom:10em;
+    left: 10em;
+}
+
+.styl-video{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    
+}
+
+
+
+
+
+
+

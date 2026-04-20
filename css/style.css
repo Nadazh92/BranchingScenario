@@ -1,1 +1,94 @@
-/*# sourceMappingURL=style.css.map */
+/* Varaibles */
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #F5F5F5;
+}
+body p {
+  font-size: 18px;
+  color: #0F1C70;
+  line-height: 1.2;
+}
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  font-weight: 700;
+}
+
+/*Skip to main content code snippet fra:https://www.a11y-collective.com/blog/skip-to-main-content/ */
+.screen-reader-text {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  background-color: black;
+  color: white;
+  opacity: 0;
+}
+
+.screen-reader-text:focus {
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 1;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav p {
+  color: #0F1C70;
+  font-size: 25px;
+  margin-left: 5px;
+  font-weight: 700;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+nav li a {
+  text-decoration: none;
+  color: #0F1C70;
+  font-size: 20px;
+  font-weight: 700;
+}
+nav a:hover {
+  border-bottom: solid 2px #0F1C70;
+}
+nav #bars {
+  display: none;
+}
+nav .styl-hotline {
+  text-decoration: none;
+  margin-right: 7px;
+  background-color: #0F1C70;
+  color: #fff;
+  border: solid 2px #0F1C70;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+nav .styl-hotline:hover {
+  background-color: green;
+}
+nav .fa-phone {
+  color: white;
+  padding-right: 10px;
+}
+
+.styl-heroOverskrift {
+  position: absolute;
+  color: #fff;
+  font-size: 30px;
+  bottom: 10em;
+  left: 10em;
+}
+
+.styl-video {
+  width: 100%;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */

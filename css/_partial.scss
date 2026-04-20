@@ -1,0 +1,21 @@
+/* Varaibles */
+$bg-color:#F5F5F5;
+$primary-color:#0F1C70;
+$secondary-color:#fff;
+$font:"national-park", sans-serif;
+
+@mixin flex($justify:center, $align:center){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin btn($paddingL:15px, $paddingR:15px){
+    background-color: $primary-color;
+    border: solid 1px $secondary-color;
+    border-radius: 10px;
+    text-align: center;
+    padding-left: $paddingL;
+    padding-right: $paddingR;
+}
+
