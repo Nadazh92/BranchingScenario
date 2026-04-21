@@ -70,13 +70,14 @@ nav #bars {
   display: none;
 }
 nav .styl-hotline {
+  border: solid 1px #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
   text-decoration: none;
-  margin-right: 7px;
-  background-color: #0F1C70;
   color: #fff;
-  border: solid 2px #0F1C70;
-  border-radius: 20px;
-  padding: 10px 20px;
+  background-color: #0F1C70;
+  margin-right: 7px;
 }
 nav .styl-hotline:hover {
   background-color: purple;
@@ -114,9 +115,6 @@ nav .fa-phone {
   text-decoration: none;
   color: #fff;
   background-color: #0F1C70;
-  background-color: #0F1C70;
-  color: #fff;
-  text-decoration: none;
 }
 
 .styl-btn:hover {
@@ -168,14 +166,18 @@ nav .fa-phone {
 
 .blivKlogere-sec {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  background-color: #0F1C70;
   margin-top: 5em;
+  background-color: #0F1C70;
 }
-.blivKlogere-sec img {
+.blivKlogere-sec .styl-img {
+  background-image: url(../img/Blivklogere.png);
+  background-repeat: no repeat;
+  background-position: center;
+  background-size: cover;
   height: 500px;
-  width: 500px;
+  width: 100%;
 }
 .blivKlogere-sec .text-container {
   display: flex;
@@ -208,27 +210,31 @@ nav .fa-phone {
 }
 
 .godeRåd-sec {
-  margin-left: 2em;
-  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.godeRåd-sec img {
+  height: 400px;
+  width: 400px;
 }
 .godeRåd-sec h1 {
   color: #0F1C70;
 }
+.godeRåd-sec p {
+  font-size: 25px;
+}
 
-.hack-sec {
+.kontakt-sec {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 20px;
-  margin-top: 3em;
-}
-.hack-sec img {
-  height: 80vh;
-}
-.hack-sec .styl-hack {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
   background-color: #0F1C70;
+  gap: 20px;
+  margin-top: 1em;
+  margin-left: 10px;
+}
+.kontakt-sec img {
+  height: 80vh;
 }/*# sourceMappingURL=style.css.map */
