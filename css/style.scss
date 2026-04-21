@@ -62,10 +62,21 @@ nav{
         font-weight: 700;
     }
 
-    a:hover{
-      
-        border-bottom: solid 2px partial.$primary-color;
+    p a{
+        text-decoration: none;
+        color: partial.$primary-color;
     }
+
+    p a:hover{
+        color: partial.$hover;
+    }
+
+     li a:hover{
+      
+        border-bottom: solid 2px partial.$hover;
+    }
+
+    
 
     #bars{
         display: none;
@@ -82,7 +93,7 @@ nav{
     }
 
     .styl-hotline:hover{
-        background-color: green;
+        background-color:partial.$hover;
         
     }
 
@@ -120,8 +131,135 @@ nav{
     background-color: partial.$primary-color;
     color: partial.$secondary-color;
     text-decoration: none;
+
 }
 
+ .styl-btn:hover{
+        background-color:partial.$hover;
+    }
+
+ .awa-sec{
+        
+        padding: 2em 15em;
+
+        h1{
+            color:partial.$primary-color;
+            font-size: 35px;
+            text-align: center;
+        }
+  
+    }
+
+    .test-container{
+        @include partial.flex();
+        gap:10em;
+        padding-top: 2em;
+
+        div{
+            background-color: partial.$secondary-color;
+            box-shadow: 0px 4px 20px 0px rgb(0,0,0,0.1);
+            border-radius: 10px;
+            padding: 2em 2em;
+            text-align: center;
+        }
+
+        img{
+            width:150px;
+            height:150px;
+        }
+
+
+        h3{
+            color:partial.$primary-color;
+        }
+
+        a{
+            // background-color: partial.$primary-color;
+            // border: solid 1px partial.$secondary-color;
+            // border-radius: 30px;
+            // text-align: center;
+            // color: partial.$secondary-color;
+            // padding: 8px 20px;
+            // text-decoration: none;
+            @include partial.btn(8px 20px 8px 20px);
+        }
+
+        a:hover{
+            background-color: partial.$hover;
+        }
+
+    }
+
+    .blivKlogere-sec{
+        @include partial.flex();
+        background-color: partial.$primary-color;
+        margin-top: 5em;
+
+
+        img{
+            height: 500px;
+            width:500px;
+        }
+
+        .text-container{ 
+            @include partial.flex($align:flex-start);
+            flex-direction: column;
+            gap:15px;
+
+        }
+
+        h1{
+            color: partial.$secondary-color;
+            padding: 0px 3em;
+            
+        }
+
+        p{
+           color: partial.$secondary-color; 
+           font-size: 20px;
+           padding: 0 5em;
+        }
+
+        a{
+            @include partial.btn(15px 20px 15px 20px);
+            margin-left: 6em;
+        }
+
+        a:hover{
+            background-color: partial.$hover;
+        }
+
+    }
+
+
+    .godeRåd-sec{
+        margin-left: 2em;
+        margin-top: 2em;
+
+        h1{
+            color: partial.$primary-color;
+        }
+    }
+
+    .hack-sec{
+        @include partial.flex($justify:flex-start);
+        gap: 20px;
+        margin-top: 3em;
+
+        img{
+            height: 80vh;
+            
+
+            
+        }
+        
+        .styl-hack{
+            @include partial.flex($align:flex-start);
+            flex-direction: column;
+            background-color: partial.$primary-color;
+            
+        }
+    }
 
 
 

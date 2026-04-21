@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Varaibles */
 body {
   box-sizing: border-box;
@@ -55,8 +56,15 @@ nav li a {
   font-size: 20px;
   font-weight: 700;
 }
-nav a:hover {
-  border-bottom: solid 2px #0F1C70;
+nav p a {
+  text-decoration: none;
+  color: #0F1C70;
+}
+nav p a:hover {
+  color: purple;
+}
+nav li a:hover {
+  border-bottom: solid 2px purple;
 }
 nav #bars {
   display: none;
@@ -71,7 +79,7 @@ nav .styl-hotline {
   padding: 10px 20px;
 }
 nav .styl-hotline:hover {
-  background-color: green;
+  background-color: purple;
 }
 nav .fa-phone {
   color: white;
@@ -103,7 +111,124 @@ nav .fa-phone {
   border-radius: 30px;
   text-align: center;
   padding: 20px 60px 20px 60px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0F1C70;
   background-color: #0F1C70;
   color: #fff;
   text-decoration: none;
+}
+
+.styl-btn:hover {
+  background-color: purple;
+}
+
+.awa-sec {
+  padding: 2em 15em;
+}
+.awa-sec h1 {
+  color: #0F1C70;
+  font-size: 35px;
+  text-align: center;
+}
+
+.test-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  padding-top: 2em;
+}
+.test-container div {
+  background-color: #fff;
+  box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 2em 2em;
+  text-align: center;
+}
+.test-container img {
+  width: 150px;
+  height: 150px;
+}
+.test-container h3 {
+  color: #0F1C70;
+}
+.test-container a {
+  border: solid 1px #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 8px 20px 8px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0F1C70;
+}
+.test-container a:hover {
+  background-color: purple;
+}
+
+.blivKlogere-sec {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0F1C70;
+  margin-top: 5em;
+}
+.blivKlogere-sec img {
+  height: 500px;
+  width: 500px;
+}
+.blivKlogere-sec .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+}
+.blivKlogere-sec h1 {
+  color: #fff;
+  padding: 0px 3em;
+}
+.blivKlogere-sec p {
+  color: #fff;
+  font-size: 20px;
+  padding: 0 5em;
+}
+.blivKlogere-sec a {
+  border: solid 1px #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 15px 20px 15px 20px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0F1C70;
+  margin-left: 6em;
+}
+.blivKlogere-sec a:hover {
+  background-color: purple;
+}
+
+.godeRåd-sec {
+  margin-left: 2em;
+  margin-top: 2em;
+}
+.godeRåd-sec h1 {
+  color: #0F1C70;
+}
+
+.hack-sec {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  margin-top: 3em;
+}
+.hack-sec img {
+  height: 80vh;
+}
+.hack-sec .styl-hack {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: #0F1C70;
 }/*# sourceMappingURL=style.css.map */
