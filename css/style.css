@@ -231,10 +231,62 @@ nav .fa-phone {
   justify-content: flex-start;
   align-items: center;
   background-color: #0F1C70;
-  gap: 20px;
   margin-top: 1em;
-  margin-left: 10px;
 }
 .kontakt-sec img {
   height: 80vh;
+}
+.kontakt-sec .form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kontakt-sec .form-container h2 {
+  color: #fff;
+}
+.kontakt-sec .form-container .textbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-left: 50px;
+}
+.kontakt-sec .form-container .textbox-container div {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+.kontakt-sec .form-container .textbox-container .styl-txtbox {
+  width: 15vw;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+  color: #0F1C70;
+}
+.kontakt-sec .form-container .styl-lbl {
+  color: #fff;
+  font-size: 18px;
+  padding-top: 15px;
+}
+.kontakt-sec .form-container .styl-chkbox {
+  margin-left: 50px;
+  padding-top: 25px;
+}
+.kontakt-sec .form-container .styl-suBtn {
+  border: solid 1px #fff;
+  border-radius: 30px;
+  text-align: center;
+  padding: 10px 50px 10px 50px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #0F1C70;
+  margin-left: 200px;
+  margin-top: 40px;
+}
+.kontakt-sec .form-container .styl-suBtn:hover {
+  background-color: purple;
+  border: solid 2px purple;
 }/*# sourceMappingURL=style.css.map */

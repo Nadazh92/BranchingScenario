@@ -245,14 +245,57 @@ nav{
     .kontakt-sec{
         @include partial.flex($justify:flex-start);
         background-color: partial.$primary-color;
-        gap: 20px;
         margin-top: 1em;
-        margin-left: 10px;
-        
+    
         img{
             height:80vh;  
         }
-    
+
+        .form-container{
+            @include partial.flex($align:center);
+            flex-direction: column;
+
+            h2{
+                color:partial.$secondary-color;
+            }
+            .textbox-container{
+            @include partial.flex();
+            gap:30px;
+            padding-left: 50px;
+        }
+
+        .textbox-container div{
+            @include partial.flex($align:flex-start);
+            flex-direction: column;
+            gap:10px;
+        }
+
+       .textbox-container .styl-txtbox{
+        @include partial.txtbox();
+       }
+
+       .styl-lbl{
+        @include partial.lbl();
+       }
+
+       .styl-chkbox{
+        margin-left: 50px;
+        padding-top: 25px;
+       }
+
+       .styl-suBtn{
+        @include partial.btn(10px 50px 10px 50px);
+       margin-left: 200px;
+        margin-top: 40px;
+       }
+
+       .styl-suBtn:hover{
+        background-color: partial.$hover;
+        border: solid 2px partial.$hover;
+       
+       }
+
+        }
     }
 
 
