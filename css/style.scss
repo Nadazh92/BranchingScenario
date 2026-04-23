@@ -298,6 +298,103 @@ nav{
         }
     }
 
+    .footer-container{
+        @include partial.flex($justify:space-between);
+        margin-left: 30px;
+        margin-right: 30px;
+
+        div{
+            @include partial.flex($align:flex-start);
+            flex-direction: column;
+            padding-bottom: 50px;
+
+            h3{
+                font-size: 22px;
+                color:partial.$hover;
+                margin-left: 5px;
+
+            }
+
+            a{
+                text-decoration: none;
+                color:partial.$primary-color;
+                padding-bottom: 20px;
+                font-size: 18px;
+            }
+
+            a:hover{
+               
+                color:partial.$hover;
+            }
+
+            .styl-omSafeLink{
+                margin-right: 50px;
+            }
+
+           
+
+        }
+    }
+
+    .styl-gåTilbage{
+        margin-top: 50px;
+        a{
+            @include partial.btn(10px 20px 10px 20px);
+        }
+    }
+
+    .gratis-wifi-sec{
+        @include partial.flex($justify:flex-start);
+        gap :10em;
+        border: solid 2px rgb(15,28,112,0.5);
+        background-color: partial.$secondary-color;
+        border-radius: 5px;
+        margin-left: 10em;
+        margin-right: 10em;
+        margin-top: 5em;
+        height:70vh;
+
+        .gratis-wifi{
+            // border: solid 2px partial.$primary-color;
+            // height:40vh;
+            // width:60%;
+            // margin-bottom: 14.4em;
+            // background-color: partial.$primary-color;
+            // background-size:cover;
+            // background-position: center;
+            // background-repeat: no repeat;
+
+            img{
+                height:50vh;
+                width:100%;
+                
+ 
+            }
+
+            
+            h1{
+                color:partial.$secondary-color;
+            }
+            
+        }
+        
+        
+
+
+
+
+        // div{
+        //     @include partial.flex($justify:flex-start);
+        //     flex-direction: column;
+        //     gap:20px;
+        // }
+
+       
+
+        
+        
+    }
+
 
 
 
