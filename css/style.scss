@@ -339,60 +339,65 @@ nav{
     .styl-gåTilbage{
         margin-top: 50px;
         a{
-            @include partial.btn(10px 20px 10px 20px);
+            text-decoration: none;
+            color: partial.$primary-color;
         }
+    }
+    .styl-GWPC{
+        color: partial.$primary-color;
+        text-align: center;
+    
     }
 
     .gratis-wifi-sec{
-        @include partial.flex($justify:flex-start);
-        gap :10em;
+        @include partial.flex($justify:center);
+        gap :5em;
         border: solid 2px rgb(15,28,112,0.5);
         background-color: partial.$secondary-color;
         border-radius: 5px;
         margin-left: 10em;
         margin-right: 10em;
-        margin-top: 5em;
+        margin-top: 3em;
         height:70vh;
 
-        .gratis-wifi{
-            // border: solid 2px partial.$primary-color;
-            // height:40vh;
-            // width:60%;
-            // margin-bottom: 14.4em;
-            // background-color: partial.$primary-color;
-            // background-size:cover;
-            // background-position: center;
-            // background-repeat: no repeat;
-
+    
             img{
                 height:50vh;
                 width:100%;
-                
- 
             }
 
             
-            h1{
-                color:partial.$secondary-color;
-            }
+
+        .test-options{
+            @include partial.flex($align:center);
+            flex-direction: column;
             
+            p{
+                font-size: 18px;
+                padding-bottom: 40px;
+                text-align: center;
+                line-height: 35px;
+            }
+
+            div{
+                @include partial.flex($align:center);
+                flex-direction: column;
+                gap:20px;
+
+                button{
+                    width:200px;
+                    height:40px;
+                    color:partial.$primary-color;
+                    font-size: 14px;
+                    font-weight: bold;
+                    background-color: partial.$secondary-color;
+                    border-radius: 5px;
+                }
+            }
+
+
         }
-        
-        
-
-
-
-
-        // div{
-        //     @include partial.flex($justify:flex-start);
-        //     flex-direction: column;
-        //     gap:20px;
-        // }
-
        
-
-        
-        
     }
 
 

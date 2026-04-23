@@ -327,32 +327,57 @@ nav .fa-phone {
   margin-top: 50px;
 }
 .styl-gåTilbage a {
-  border: solid 1px #fff;
-  border-radius: 30px;
-  text-align: center;
-  padding: 10px 20px 10px 20px;
   text-decoration: none;
-  color: #fff;
-  background-color: #0F1C70;
+  color: #0F1C70;
+}
+
+.styl-GWPC {
+  color: #0F1C70;
+  text-align: center;
 }
 
 .gratis-wifi-sec {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
-  gap: 10em;
+  gap: 5em;
   border: solid 2px rgba(15, 28, 112, 0.5);
   background-color: #fff;
   border-radius: 5px;
   margin-left: 10em;
   margin-right: 10em;
-  margin-top: 5em;
+  margin-top: 3em;
   height: 70vh;
 }
-.gratis-wifi-sec .gratis-wifi img {
+.gratis-wifi-sec img {
   height: 50vh;
   width: 100%;
 }
-.gratis-wifi-sec .gratis-wifi h1 {
-  color: #fff;
+.gratis-wifi-sec .test-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.gratis-wifi-sec .test-options p {
+  font-size: 18px;
+  padding-bottom: 40px;
+  text-align: center;
+  line-height: 35px;
+}
+.gratis-wifi-sec .test-options div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.gratis-wifi-sec .test-options div button {
+  width: 200px;
+  height: 40px;
+  color: #0F1C70;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 5px;
 }/*# sourceMappingURL=style.css.map */
