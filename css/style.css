@@ -116,8 +116,7 @@ nav .fa-phone {
   color: #fff;
   background-color: #0F1C70;
 }
-
-.styl-btn:hover {
+.styl-btn .styl-btn:hover {
   background-color: purple;
 }
 
@@ -160,7 +159,7 @@ nav .fa-phone {
   color: #fff;
   background-color: #0F1C70;
 }
-.test-container a:hover {
+.test-container a a:hover {
   background-color: purple;
 }
 
@@ -205,7 +204,7 @@ nav .fa-phone {
   background-color: #0F1C70;
   margin-left: 6em;
 }
-.blivKlogere-sec a:hover {
+.blivKlogere-sec a a:hover {
   background-color: purple;
 }
 
@@ -233,8 +232,11 @@ nav .fa-phone {
   background-color: #0F1C70;
   margin-top: 1em;
 }
-.kontakt-sec img {
-  height: 80vh;
+.kontakt-sec .kontaktBillede {
+  background-image: url(../img/kontaktBillede1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .kontakt-sec .form-container {
   display: flex;
@@ -316,7 +318,7 @@ nav .fa-phone {
   padding-bottom: 20px;
   font-size: 18px;
 }
-.footer-container div a:hover {
+.footer-container div a a:hover {
   color: purple;
 }
 .footer-container div .styl-omSafeLink {
@@ -380,4 +382,76 @@ nav .fa-phone {
   font-weight: bold;
   background-color: #fff;
   border-radius: 5px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* tablet og  mobile  */
+@media screen and (max-width: 768px) {
+  #bars {
+    display: block;
+  }
+  ul li {
+    display: none;
+  }
+  #hotline {
+    display: none;
+  }
+  .styl-video {
+    height: 300px;
+  }
+  .styl-heroOverskrift {
+    padding: 15px 0px 15px 8px;
+    font-size: 15px;
+    top: 12em;
+    left: 5em;
+  }
+  .styl-heroOverskrift .styl-btn {
+    border: solid 1px #fff;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px 60px 15px 60px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0F1C70;
+  }
+  .awa-sec {
+    padding: 2em 5em;
+  }
+  .awa-sec h1 {
+    font-size: 30px;
+  }
+  .awa-sec .test-container {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+  .blivKlogere-sec {
+    flex-wrap: wrap;
+  }
+  .blivKlogere-sec .text-container {
+    gap: 5px;
+  }
+  .blivKlogere-sec .text-container h1 {
+    font-size: 30px;
+  }
+  .blivKlogere-sec a {
+    margin-bottom: 20px;
+  }
+  .godeRåd-sec {
+    flex-wrap: wrap;
+  }
+  .godeRåd-sec h1 {
+    margin-left: 15px;
+    font-size: 30px;
+  }
+  .godeRåd-sec p {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .kontakt-sec {
+    flex-wrap: wrap;
+  }
+  .kontakt-sec .kontaktBillede {
+    width: 100%;
+    justify-content: center;
+  }
+}
+/* medium devices (lanscape tablet 768px and up) *//*# sourceMappingURL=style.css.map */

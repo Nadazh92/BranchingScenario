@@ -38,7 +38,7 @@ body{
     opacity: 1; //The link's opacity is set to 1, making it fully visible.
   }
 
-
+// ------------navigation---------------
 nav{
     @include partial.flex($justify:space-between);
 
@@ -99,6 +99,7 @@ nav{
 
 }
 
+// ----------------video-----------------
 
 .styl-heroOverskrift{
     position:absolute;
@@ -123,12 +124,14 @@ nav{
 
 .styl-btn{
     @include partial.btn(20px 60px 20px 60px);
+
+    .styl-btn:hover{
+        background-color:partial.$hover;
+    }
     
 }
 
- .styl-btn:hover{
-        background-color:partial.$hover;
-    }
+// -------------- Awareness Træning sektion -------------- 
 
  .awa-sec{
         
@@ -167,13 +170,16 @@ nav{
 
         a{
             @include partial.btn(8px 20px 8px 20px);
-        }
 
-        a:hover{
+             a:hover{
             background-color: partial.$hover;
+        }
         }
 
     }
+
+
+    // --------- Bliv klogere på digital svindel sektion------------
 
     .blivKlogere-sec{
         @include partial.flex($justify:flex-start);
@@ -213,22 +219,23 @@ nav{
         a{
             @include partial.btn(15px 20px 15px 20px);
             margin-left: 6em;
-        }
 
-        a:hover{
+            a:hover{
             background-color: partial.$hover;
+        }
         }
 
     }
 
-
+// ----------------- Gode Råd sektion--------------------
     .godeRåd-sec{
         @include partial.flex($justify:center);
         margin-top: 1em;
 
         img{
             height:400px;
-            width:400px;
+             width:400px;
+            
         }
         
         h1{
@@ -240,6 +247,7 @@ nav{
         }
     }
 
+    // ---------------- kontakt sektion-----------
 
 
     .kontakt-sec{
@@ -247,8 +255,14 @@ nav{
         background-color: partial.$primary-color;
         margin-top: 1em;
     
-        img{
-            height:80vh;  
+        // img{
+        //     height:80vh;  
+        // }
+        .kontaktBillede{
+            background-image:url(../img/kontaktBillede1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
         .form-container{
@@ -285,7 +299,7 @@ nav{
 
        .styl-suBtn{
         @include partial.btn(10px 50px 10px 50px);
-       margin-left: 200px;
+        margin-left: 200px;
         margin-top: 40px;
        }
 
@@ -298,6 +312,7 @@ nav{
         }
     }
 
+// ------------ footer -------------
     .footer-container{
         @include partial.flex($justify:space-between);
         margin-left: 30px;
@@ -320,12 +335,14 @@ nav{
                 color:partial.$primary-color;
                 padding-bottom: 20px;
                 font-size: 18px;
-            }
 
-            a:hover{
+                a:hover{
                
                 color:partial.$hover;
             }
+            }
+
+            
 
             .styl-omSafeLink{
                 margin-right: 50px;
@@ -335,6 +352,9 @@ nav{
 
         }
     }
+
+
+    // -------------Test siden--------------
 
     .styl-gåTilbage{
         margin-top: 50px;
@@ -399,6 +419,128 @@ nav{
         }
        
     }
+
+    /* tablet og  mobile  */
+@media screen and (max-width:768px){
+
+    // ---------navigationen-----------
+
+    #bars{
+        display: block;
+        
+    }
+
+    ul li{
+        display: none;
+    }
+
+    #hotline{
+        display: none;
+    }
+
+
+
+// ---------------Video--------------
+
+.styl-video{
+    height:300px;
+}
+
+.styl-heroOverskrift{
+    padding: 15px 0px 15px 8px;
+    font-size: 15px;
+    top:12em;
+    left: 5em;
+
+    .styl-btn{
+    @include partial.btn(15px 60px 15px 60px);
+    }
+    
+}
+
+// ----------Awareness Træning------------
+
+.awa-sec{
+    padding: 2em 5em;
+        h1{
+            
+            font-size: 30px;  
+        }
+
+        .test-container{
+            flex-wrap: wrap;
+            gap:2em;
+}
+}
+
+// ---------bliv klogere på digitale svindel--------
+
+.blivKlogere-sec{
+    flex-wrap: wrap;
+
+    .text-container{
+        gap:5px;
+
+        h1{
+            font-size: 30px;
+            
+        }
+    }
+
+    a{
+        margin-bottom: 20px;
+    }
+}
+
+    // -------------Gode Råd------------
+.godeRåd-sec{
+    flex-wrap: wrap;
+    
+   h1{
+    margin-left: 15px;
+    font-size: 30px;
+   }
+
+    p{
+        font-size:20px;
+        margin-left: 10px;
+        
+    }
+}
+
+// ------- kontakt form--------
+
+.kontakt-sec{
+    flex-wrap: wrap;
+    
+
+    .kontaktBillede{
+        width:100%;
+        
+    }
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* medium devices (lanscape tablet 768px and up) */
+@media screen and (min-width:768px) and (max-width:1180px){
+    
+}
+
+
+
+
 
 
 
