@@ -22,14 +22,7 @@ $font:"national-park", sans-serif;
 
 }
 
-@mixin txtbox(){
-    width:15vw;
-    height:30px;
-    border: none;
-    border-radius: 5px;
-    color:$primary-color;
-     
-}
+
 
 @mixin lbl(){
     color: $secondary-color;

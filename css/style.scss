@@ -255,28 +255,26 @@ nav{
         background-color: partial.$primary-color;
         margin-top: 1em;
     
-        // img{
-        //     height:80vh;  
-        // }
-        .kontaktBillede{
-            background-image:url(../img/kontaktBillede1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
+        img{
+            height:80vh;  
         }
+        
 
         .form-container{
             @include partial.flex($align:center);
             flex-direction: column;
+            margin-bottom: 3em;
+            margin-left: 4em;
 
             h2{
                 color:partial.$secondary-color;
             }
             .textbox-container{
-            @include partial.flex();
+            @include partial.flex($justify:center);
             gap:30px;
-            padding-left: 50px;
-        }
+    
+            
+          }
 
         .textbox-container div{
             @include partial.flex($align:flex-start);
@@ -284,23 +282,27 @@ nav{
             gap:10px;
         }
 
-       .textbox-container .styl-txtbox{
-        @include partial.txtbox();
-       }
+       .textbox-container input[type=text],input[type=email], input[type=tel], input[type=date],input[type=time]{
+        width:200px;
+        height:30px;
+        border-radius: 5px;
+        color:partial.$primary-color;
 
+        
+    }
        .styl-lbl{
         @include partial.lbl();
        }
 
        .styl-chkbox{
-        margin-left: 50px;
         padding-top: 25px;
        }
 
        .styl-suBtn{
         @include partial.btn(10px 50px 10px 50px);
-        margin-left: 200px;
-        margin-top: 40px;
+        
+        margin-left: 12em;
+        margin-top: 2em;
        }
 
        .styl-suBtn:hover{
@@ -424,9 +426,13 @@ nav{
 @media screen and (max-width:768px){
 
     // ---------navigationen-----------
-
+    nav{
     #bars{
         display: block;
+        color:partial.$primary-color;
+        font-size: 25px;
+        border:none;
+        background-color:partial.$bg-color;
         
     }
 
@@ -438,7 +444,7 @@ nav{
         display: none;
     }
 
-
+    }
 
 // ---------------Video--------------
 
@@ -450,7 +456,7 @@ nav{
     padding: 15px 0px 15px 8px;
     font-size: 15px;
     top:12em;
-    left: 5em;
+    left: 3em;
 
     .styl-btn{
     @include partial.btn(15px 60px 15px 60px);
@@ -513,12 +519,37 @@ nav{
 .kontakt-sec{
     flex-wrap: wrap;
     
+        img{
+            display: none;}
 
-    .kontaktBillede{
-        width:100%;
-        
+            .form-container{
+                margin-left: 2em;
+            }
+
+                    
+}
+
+
+// ------------footer---------
+
+.footer-container{
+    @include partial.flex($justify:space-around);
+    #diLink{
+        display: none;
+    }
+
+    #omOs{
+        display: none;
     }
 }
+
+
+
+
+
+
+
+
 
 
 }

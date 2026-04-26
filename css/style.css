@@ -232,17 +232,16 @@ nav .fa-phone {
   background-color: #0F1C70;
   margin-top: 1em;
 }
-.kontakt-sec .kontaktBillede {
-  background-image: url(../img/kontaktBillede1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.kontakt-sec img {
+  height: 80vh;
 }
 .kontakt-sec .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 3em;
+  margin-left: 4em;
 }
 .kontakt-sec .form-container h2 {
   color: #fff;
@@ -252,7 +251,6 @@ nav .fa-phone {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding-left: 50px;
 }
 .kontakt-sec .form-container .textbox-container div {
   display: flex;
@@ -261,10 +259,9 @@ nav .fa-phone {
   flex-direction: column;
   gap: 10px;
 }
-.kontakt-sec .form-container .textbox-container .styl-txtbox {
-  width: 15vw;
+.kontakt-sec .form-container .textbox-container input[type=text], .kontakt-sec .form-container input[type=email], .kontakt-sec .form-container input[type=tel], .kontakt-sec .form-container input[type=date], .kontakt-sec .form-container input[type=time] {
+  width: 200px;
   height: 30px;
-  border: none;
   border-radius: 5px;
   color: #0F1C70;
 }
@@ -274,7 +271,6 @@ nav .fa-phone {
   padding-top: 15px;
 }
 .kontakt-sec .form-container .styl-chkbox {
-  margin-left: 50px;
   padding-top: 25px;
 }
 .kontakt-sec .form-container .styl-suBtn {
@@ -285,8 +281,8 @@ nav .fa-phone {
   text-decoration: none;
   color: #fff;
   background-color: #0F1C70;
-  margin-left: 200px;
-  margin-top: 40px;
+  margin-left: 12em;
+  margin-top: 2em;
 }
 .kontakt-sec .form-container .styl-suBtn:hover {
   background-color: purple;
@@ -386,13 +382,17 @@ nav .fa-phone {
 
 /* tablet og  mobile  */
 @media screen and (max-width: 768px) {
-  #bars {
+  nav #bars {
     display: block;
+    color: #0F1C70;
+    font-size: 25px;
+    border: none;
+    background-color: #F5F5F5;
   }
-  ul li {
+  nav ul li {
     display: none;
   }
-  #hotline {
+  nav #hotline {
     display: none;
   }
   .styl-video {
@@ -402,7 +402,7 @@ nav .fa-phone {
     padding: 15px 0px 15px 8px;
     font-size: 15px;
     top: 12em;
-    left: 5em;
+    left: 3em;
   }
   .styl-heroOverskrift .styl-btn {
     border: solid 1px #fff;
@@ -449,8 +449,22 @@ nav .fa-phone {
   .kontakt-sec {
     flex-wrap: wrap;
   }
-  .kontakt-sec .kontaktBillede {
-    width: 100%;
+  .kontakt-sec img {
+    display: none;
+  }
+  .kontakt-sec .form-container {
+    margin-left: 2em;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-container #diLink {
+    display: none;
+  }
+  .footer-container #omOs {
+    display: none;
   }
 }
 /* medium devices (lanscape tablet 768px and up) *//*# sourceMappingURL=style.css.map */
