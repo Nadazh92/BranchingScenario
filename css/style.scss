@@ -426,7 +426,12 @@ nav{
 @media screen and (max-width:768px){
 
     // ---------navigationen-----------
-    nav{
+    nav{ 
+        
+        ul{
+            display:none;
+        }
+        
     #bars{
         display: block;
         color:partial.$primary-color;
@@ -435,14 +440,22 @@ nav{
         background-color:partial.$bg-color;
         
     }
+    .show{
+        display: block; 
+        position: absolute;
+        top: 63px;
+        background-color:partial.$bg-color;
+        width: 100%;
+        
 
-    ul li{
-        display: none;
+    }
+      button#bars{
+        background-color: partial.$bg-color;
+        border: none;
+        color:partial.$primary-color;
+    
     }
 
-    #hotline{
-        display: none;
-    }
 
     }
 

@@ -382,6 +382,9 @@ nav .fa-phone {
 
 /* tablet og  mobile  */
 @media screen and (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
   nav #bars {
     display: block;
     color: #0F1C70;
@@ -389,11 +392,17 @@ nav .fa-phone {
     border: none;
     background-color: #F5F5F5;
   }
-  nav ul li {
-    display: none;
+  nav .show {
+    display: block;
+    position: absolute;
+    top: 63px;
+    background-color: #F5F5F5;
+    width: 100%;
   }
-  nav #hotline {
-    display: none;
+  nav button#bars {
+    background-color: #F5F5F5;
+    border: none;
+    color: #0F1C70;
   }
   .styl-video {
     height: 300px;
