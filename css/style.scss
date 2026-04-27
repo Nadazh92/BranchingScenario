@@ -87,11 +87,6 @@ nav{
         margin-right:7px;
     }
 
-    .styl-hotline:hover{
-        background-color:partial.$hover;
-        
-    }
-
     .fa-phone{
         color: white;
         padding-right: 10px;
@@ -124,10 +119,6 @@ nav{
 
 .styl-btn{
     @include partial.btn(20px 60px 20px 60px);
-
-    .styl-btn:hover{
-        background-color:partial.$hover;
-    }
     
 }
 
@@ -171,9 +162,6 @@ nav{
         a{
             @include partial.btn(8px 20px 8px 20px);
 
-             a:hover{
-            background-color: partial.$hover;
-        }
         }
 
     }
@@ -220,9 +208,6 @@ nav{
             @include partial.btn(15px 20px 15px 20px);
             margin-left: 6em;
 
-            a:hover{
-            background-color: partial.$hover;
-        }
         }
 
     }
@@ -281,8 +266,7 @@ nav{
             .textbox-container{
             @include partial.flex($justify:center);
             gap:30px;
-    
-            
+     
           }
 
         .textbox-container div{
@@ -295,10 +279,9 @@ nav{
         width:200px;
         height:30px;
         border-radius: 5px;
-        color:partial.$primary-color;
+        color:partial.$primary-color;   
+       }
 
-        
-    }
        .styl-lbl{
         @include partial.lbl();
        }
@@ -313,13 +296,6 @@ nav{
         margin-left: 12em;
         margin-top: 2em;
        }
-
-       .styl-suBtn:hover{
-        background-color: partial.$hover;
-        border: solid 2px partial.$hover;
-       
-       }
-
         }
     }
 
@@ -346,15 +322,13 @@ nav{
                 color:partial.$primary-color;
                 padding-bottom: 20px;
                 font-size: 18px;
-
-                a:hover{
-               
-                color:partial.$hover;
             }
+
+               a:hover{
+                color:partial.$hover;
             }
 
             
-
             .styl-omSafeLink{
                 margin-right: 50px;
             }
@@ -433,6 +407,8 @@ nav{
 
     /* tablet og  mobile  */
 @media screen and (max-width:768px){
+
+    // -------------------------index side-----------------------------------------
 
     // ---------navigationen-----------
     nav{ 
@@ -540,14 +516,25 @@ nav{
 // ------- kontakt form--------
 
 .kontakt-sec{
+    @include partial.flex($justify:center);
     flex-wrap: wrap;
+
     
-        img{
-            display: none;}
+            h1{
+                font-size:25px;
+                padding-left: 1em;
+            }
+            
+            p{
+                padding: 1em;
+            }
 
             .form-container{
-                margin-left: 2em;
+                @include partial.flex($justify:flex-start);
+                padding: 1em 1em;
+
             }
+            
 
                     
 }
@@ -565,6 +552,36 @@ nav{
         display: none;
     }
 }
+
+// ---------------------------------------------test siden-----------------------------
+    .gratis-wifi-sec{
+        flex-wrap: wrap;
+        gap:0em;
+        height:140vh;
+        width:auto;
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-top: 1em;
+        padding: 1em 1em;
+
+
+         div img{
+                height:35vh;
+                width:auto; 
+            }
+
+        .test-options{
+
+            p{
+                font-size: 18px;
+                
+    
+            }
+
+}
+}
+
+
 }
 
 
@@ -644,6 +661,30 @@ nav{
     }
 // --------- kontakt form sektion------------ 
 
+.kontakt-sec{
+    @include partial.flex($justify:center);
+    flex-shrink: 1;
+    padding-right:2em;
+
+    
+            h1{
+                font-size:20px;
+                padding-left: 1em;
+            }
+            
+            p{
+                font-size: 17px;
+                padding: 1em;
+                
+            }
+
+            .form-container{
+                padding: 1em 1em;
+                margin-right:1em;
+
+            }                   
+}
+
 
 //--------------footer-----------------
 .footer-container{
@@ -653,9 +694,24 @@ nav{
     }
 }
 
- 
+// ---------------------------------------------test siden-----------------------------
+    .gratis-wifi-sec{
+        flex-shrink: 1;
+        gap:2em;
+        width:auto;
+        margin-left: 5em;
+        margin-right: 5em;
+        margin-top: 1em;
 
 
+
+         div img{
+                height:40vh;
+                width:auto; 
+                padding-left: 2em;
+            }
+
+}
 
 }
 
