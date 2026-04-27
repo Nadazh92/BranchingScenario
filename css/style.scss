@@ -251,24 +251,33 @@ nav{
 
 
     .kontakt-sec{
-        @include partial.flex($justify:flex-start);
+        @include partial.flex($justify:space-evenly);
         background-color: partial.$primary-color;
         margin-top: 1em;
     
-        img{
-            height:80vh;  
+        h1{
+            color:partial.$secondary-color;
+            padding-left: 3em;
+        }
+
+        p{
+            color:partial.$secondary-color;
+            padding-left: 5em;
+            line-height: 1.7;
         }
         
 
         .form-container{
             @include partial.flex($align:center);
+            border: solid 2px rgba($color: white, $alpha: 0.7) ;
+            padding: 2em 2em;
+            border-radius: 10px;
             flex-direction: column;
             margin-bottom: 3em;
-            margin-left: 4em;
+            margin-top: 2em;
+    
 
-            h2{
-                color:partial.$secondary-color;
-            }
+        
             .textbox-container{
             @include partial.flex($justify:center);
             gap:30px;
@@ -453,6 +462,7 @@ nav{
         background-color: partial.$bg-color;
         border: none;
         color:partial.$primary-color;
+        
     
     }
 
@@ -501,7 +511,7 @@ nav{
         gap:5px;
 
         h1{
-            font-size: 30px;
+            font-size: 22px;
             
         }
     }
@@ -555,31 +565,98 @@ nav{
         display: none;
     }
 }
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
 
 
 
 /* medium devices (lanscape tablet 768px and up) */
 @media screen and (min-width:768px) and (max-width:1180px){
+
+    // ---------------Video--------------
+
+.styl-video{
+    height:400px;
+}
+
+.styl-heroOverskrift{
+    padding: 15px 0px 15px 8px;
+    font-size: 15px;
+    top:15em;
+    left: 20em;
+
+    .styl-btn{
+    @include partial.btn(15px 60px 15px 60px);
+    }
     
+}
+
+// ----------Awareness Træning------------
+
+.awa-sec{
+    padding: 2em 5em;
+
+    p{
+        text-align: center;
+    }
+        h1{
+            
+            font-size: 30px;  
+        }
+
+        .test-container{
+            flex-shrink: 3;
+            gap:2em;
+}
+
+}
+
+// ---------bliv klogere på digitale svindel--------
+
+.blivKlogere-sec{
+    flex-shrink: 3;
+    .text-container{
+        gap:5px;
+
+        h1{padding: 0px 1em; }
+        p{padding: 0 2em;}
+        
+    }
+
+    a{margin-bottom: 20px;}
+   
+}
+// ----------------- Gode Råd sektion--------------------
+    .godeRåd-sec{
+        
+        margin-top: 1em;
+
+        img{
+            height:400px;
+             width:400px; 
+        }
+        
+        h1{
+            font-size: 22px;}
+       
+
+        p{font-size: 20px;}
+           
+    }
+// --------- kontakt form sektion------------ 
+
+
+//--------------footer-----------------
+.footer-container{
+    @include partial.flex($justify:space-around);
+    #omOs{
+        display: none;
+    }
+}
+
+ 
+
+
+
 }
 
 

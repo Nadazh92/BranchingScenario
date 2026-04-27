@@ -77,6 +77,12 @@ nav .styl-hotline {
   text-decoration: none;
   color: #fff;
   background-color: #0F1C70;
+}
+nav .styl-hotline btn:hover {
+  background-color: purple;
+  border: solid 1px #fff;
+}
+nav .styl-hotline {
   margin-right: 7px;
 }
 nav .styl-hotline:hover {
@@ -115,6 +121,10 @@ nav .fa-phone {
   text-decoration: none;
   color: #fff;
   background-color: #0F1C70;
+}
+.styl-btn btn:hover {
+  background-color: purple;
+  border: solid 1px #fff;
 }
 .styl-btn .styl-btn:hover {
   background-color: purple;
@@ -159,6 +169,10 @@ nav .fa-phone {
   color: #fff;
   background-color: #0F1C70;
 }
+.test-container a btn:hover {
+  background-color: purple;
+  border: solid 1px #fff;
+}
 .test-container a a:hover {
   background-color: purple;
 }
@@ -202,6 +216,12 @@ nav .fa-phone {
   text-decoration: none;
   color: #fff;
   background-color: #0F1C70;
+}
+.blivKlogere-sec a btn:hover {
+  background-color: purple;
+  border: solid 1px #fff;
+}
+.blivKlogere-sec a {
   margin-left: 6em;
 }
 .blivKlogere-sec a a:hover {
@@ -227,24 +247,30 @@ nav .fa-phone {
 
 .kontakt-sec {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #0F1C70;
   margin-top: 1em;
 }
-.kontakt-sec img {
-  height: 80vh;
+.kontakt-sec h1 {
+  color: #fff;
+  padding-left: 3em;
+}
+.kontakt-sec p {
+  color: #fff;
+  padding-left: 5em;
+  line-height: 1.7;
 }
 .kontakt-sec .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  border: solid 2px rgba(255, 255, 255, 0.7);
+  padding: 2em 2em;
+  border-radius: 10px;
   flex-direction: column;
   margin-bottom: 3em;
-  margin-left: 4em;
-}
-.kontakt-sec .form-container h2 {
-  color: #fff;
+  margin-top: 2em;
 }
 .kontakt-sec .form-container .textbox-container {
   display: flex;
@@ -281,6 +307,12 @@ nav .fa-phone {
   text-decoration: none;
   color: #fff;
   background-color: #0F1C70;
+}
+.kontakt-sec .form-container .styl-suBtn btn:hover {
+  background-color: purple;
+  border: solid 1px #fff;
+}
+.kontakt-sec .form-container .styl-suBtn {
   margin-left: 12em;
   margin-top: 2em;
 }
@@ -422,6 +454,10 @@ nav .fa-phone {
     color: #fff;
     background-color: #0F1C70;
   }
+  .styl-heroOverskrift .styl-btn btn:hover {
+    background-color: purple;
+    border: solid 1px #fff;
+  }
   .awa-sec {
     padding: 2em 5em;
   }
@@ -439,7 +475,7 @@ nav .fa-phone {
     gap: 5px;
   }
   .blivKlogere-sec .text-container h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
   .blivKlogere-sec a {
     margin-bottom: 20px;
@@ -476,4 +512,77 @@ nav .fa-phone {
     display: none;
   }
 }
-/* medium devices (lanscape tablet 768px and up) *//*# sourceMappingURL=style.css.map */
+/* medium devices (lanscape tablet 768px and up) */
+@media screen and (min-width: 768px) and (max-width: 1180px) {
+  .styl-video {
+    height: 400px;
+  }
+  .styl-heroOverskrift {
+    padding: 15px 0px 15px 8px;
+    font-size: 15px;
+    top: 15em;
+    left: 20em;
+  }
+  .styl-heroOverskrift .styl-btn {
+    border: solid 1px #fff;
+    border-radius: 30px;
+    text-align: center;
+    padding: 15px 60px 15px 60px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #0F1C70;
+  }
+  .styl-heroOverskrift .styl-btn btn:hover {
+    background-color: purple;
+    border: solid 1px #fff;
+  }
+  .awa-sec {
+    padding: 2em 5em;
+  }
+  .awa-sec p {
+    text-align: center;
+  }
+  .awa-sec h1 {
+    font-size: 30px;
+  }
+  .awa-sec .test-container {
+    flex-shrink: 3;
+    gap: 2em;
+  }
+  .blivKlogere-sec {
+    flex-shrink: 3;
+  }
+  .blivKlogere-sec .text-container {
+    gap: 5px;
+  }
+  .blivKlogere-sec .text-container h1 {
+    padding: 0px 1em;
+  }
+  .blivKlogere-sec .text-container p {
+    padding: 0 2em;
+  }
+  .blivKlogere-sec a {
+    margin-bottom: 20px;
+  }
+  .godeRåd-sec {
+    margin-top: 1em;
+  }
+  .godeRåd-sec img {
+    height: 400px;
+    width: 400px;
+  }
+  .godeRåd-sec h1 {
+    font-size: 22px;
+  }
+  .godeRåd-sec p {
+    font-size: 20px;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-container #omOs {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

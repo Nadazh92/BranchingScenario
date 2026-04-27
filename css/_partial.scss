@@ -20,6 +20,11 @@ $font:"national-park", sans-serif;
     color:$secondary-color;
     background-color: $primary-color;
 
+    btn:hover{
+        background-color: $hover;
+        border: solid 1px $secondary-color;
+    }
+
 }
 
 
