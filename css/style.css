@@ -375,9 +375,9 @@ nav .fa-phone {
 }
 .gratis-wifi-sec .test-options p {
   font-size: 18px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   text-align: center;
-  line-height: 35px;
+  line-height: 20px;
 }
 .gratis-wifi-sec .test-options div {
   display: flex;
@@ -394,6 +394,36 @@ nav .fa-phone {
   font-weight: bold;
   background-color: #fff;
   border-radius: 5px;
+}
+.gratis-wifi-sec #Scenario-options {
+  display: none;
+}
+.gratis-wifi-sec #uden-VP-option {
+  display: none;
+}
+.gratis-wifi-sec #Logind-uden-tænker {
+  display: none;
+}
+.gratis-wifi-sec #brug-vpn {
+  display: none;
+}
+.gratis-wifi-sec #hotspot {
+  display: block;
+}
+.gratis-wifi-sec #tjek-netværk {
+  display: none;
+}
+.gratis-wifi-sec .fa-x {
+  color: red;
+  font-size: 20px;
+}
+.gratis-wifi-sec .fa-triangle-exclamation {
+  color: rgb(243, 193, 11);
+  font-size: 20px;
+}
+.gratis-wifi-sec .fa-check {
+  color: green;
+  font-size: 20px;
 }
 
 /* tablet og  mobile  */

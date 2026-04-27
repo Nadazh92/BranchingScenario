@@ -379,15 +379,16 @@ nav{
             
             p{
                 font-size: 18px;
-                padding-bottom: 40px;
+                padding-bottom: 10px;
                 text-align: center;
-                line-height: 35px;
+                line-height: 20px;
             }
 
             div{
                 @include partial.flex($align:center);
                 flex-direction: column;
                 gap:20px;
+               
 
                 button{
                     width:200px;
@@ -400,9 +401,48 @@ nav{
                 }
             }
 
-
         }
-       
+
+        #Scenario-options{
+            display: none;
+        }
+
+        #uden-VP-option{
+            display: none;
+        }
+        
+        #Logind-uden-tænker{
+            display:none;
+        }
+
+        #brug-vpn{
+            display:none;
+        }
+
+        #hotspot{
+            display:block;
+        }
+    
+        #tjek-netværk{
+            display: none;
+        }
+
+        .fa-x{
+            color:red;
+            font-size: 20px;
+           
+        }
+
+        .fa-triangle-exclamation{
+            color:rgb(243, 193, 11);
+            font-size: 20px;
+        }
+
+        .fa-check{
+            color:green;
+            font-size: 20px;
+        }
+  
     }
 
     /* tablet og  mobile  */
