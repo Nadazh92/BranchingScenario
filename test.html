@@ -22,58 +22,62 @@
            <div>
              <img src="img/Wifi.png" alt="Free wifi">
            </div>
-
-            <div  id="Scenario-options"     class="test-options">
-            <p>Du sidder på en café og arbejder på en vigtig studieopgave. <br> Du har tre forskellige muligheder for at få adgang til internettet. <br>Hvilken vælger du?</p>
+            <!-- ---------stage 0 -------------- -->
+            <div class="stage active">
+            <p>Du sidder på en café og arbejder på en vigtig studieopgave.</p>
+            <p>Du har tre forskellige muligheder for at få adgang til internettet.Hvilken vælger du?</p>
 
             <div>
-                <button>Brug åbent WiFi uden VPN</button>
-               <button>Tjek Netværk</button>
-               <button>Brug Hotspot</button>
+                <button class="btn">Brug åbent WiFi uden VPN</button>
+               <button class="btn">Tjek Netværk</button>
+               <button class="btn">Brug Hotspot</button>
             </div>
             </div>
-
-            <div id="uden-VP-option" class="test-options">
+            <!-- ----------------stage 1---------------- -->
+            <div class="stage">
                 <p>Du er nu online og logger ind på din skolekonto.</p>
                 <div>
-                    <button>Log ind uden at tænke</button>
-                    <button>brug VPN</button>
+                    <button class="btn">Log ind uden at tænke</button>
+                    <button class="btn">Brug VPN</button>
                </div>
             </div>
-
-            <div id="Logind-uden-tænker" class="test-options">
-                
+            <!-------------- stage 2------------------------->
+            <div class="stage">
+                <h2 class="ops">Oooooooooooops!</h2>
                 <p><i class="fa-solid fa-x"></i> Du logger ind på et falsk netværk.En hacker opsnapper dine loginoplysninger</p>
-               <p>Offentlige WiFi kan være usikre , sær uden kryptering</p>
-                
+               <p><i class="fa-regular fa-message"></i><span> Feedback</span> :offentlige WiFi kan være usikre , sær uden kryptering</p>
                <div>
-                    <button>Start Forfra</button>
+                    <button class="btn">Start Forfra</button>
                 </div>
             </div>
-
-            <div id="brug-vpn" class="test-options">
+            <!----------------------stage 3--------------------->
+            <div class="stage">
+               <h2 class="paspå">Pas På !</h2>
                <p><i class="fa-solid fa-triangle-exclamation"></i> Du bruger WiFi, men undgår følsomme oplysninger.</p>
-               <p>Du reducerede risikoen, men forbindelsen er stadig usikker.</p>
+               <p><i class="fa-regular fa-message"></i><span> Feedback</span> :du reducerede risikoen, men forbindelsen er stadig usikker.</p>
                <div>
-                <button>Start Forfra</button>
+                <button class="btn">Start Forfra</button>
                 </div>
             </div>
-
-            <div id="hotspot" class="test-options">
-               <p><i class="fa-solid fa-check"></i> Du bruger hotspot eller verificeret netværk.Dine data er sikre.</p>
-               <p>Du tog et sikkert valg og beskyttede dine data.</p>
-               <div>
-                <button>Start Forfra</button>
-                </div>
-            </div>
-
-            <div id="tjek-netværk" class="test-options">
+            <!-------------------------stage 4-------------------------->
+            <div class="stage">
                <p>Du opdager flere netværk med lignende navne:</p>
                <p>Cafe_Free_WiFi &nbsp; Cafe_Free_WiFi_5G &nbsp; Cafe_Free_WiFi_FREE</p>
                <div>
-                <button>Vælg det første</button>
-                <button>Spørg personalet</button>
-                <button>Undgå WiFi</button>
+                <button class="btn">Vælg det første</button>
+                <button class="btn">Spørg personalet</button>
+                <button class="btn">Undgå WiFi</button>
+                </div>
+            </div>
+
+            <!-----------------------stage 5-------------------->
+           
+             <div class="stage">
+                <h2 class="godtvælg"><i class="fa-solid fa-face-smile"></i> Et Godt Vælg !</h2>
+               <p><i class="fa-solid fa-check"></i> Du bruger hotspot eller verificeret netværk.Dine data er sikre.</p>
+               <p><i class="fa-regular fa-message"></i><span> Feedback</span>: du tog et sikkert valg og beskyttede dine data.</p>
+               <div>
+                <button class="btn">Start Forfra</button>
                 </div>
             </div>
 

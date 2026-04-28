@@ -367,26 +367,31 @@ nav .fa-phone {
   height: 50vh;
   width: 100%;
 }
-.gratis-wifi-sec .test-options {
+.gratis-wifi-sec .stage {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  display: none;
 }
-.gratis-wifi-sec .test-options p {
+.gratis-wifi-sec .stage.active {
+  display: block;
+}
+.gratis-wifi-sec .stage p {
   font-size: 18px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-align: center;
   line-height: 20px;
+  margin-left: 20px;
 }
-.gratis-wifi-sec .test-options div {
+.gratis-wifi-sec .stage div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 20px;
 }
-.gratis-wifi-sec .test-options div button {
+.gratis-wifi-sec .stage div .btn {
   width: 200px;
   height: 40px;
   color: #0F1C70;
@@ -394,24 +399,6 @@ nav .fa-phone {
   font-weight: bold;
   background-color: #fff;
   border-radius: 5px;
-}
-.gratis-wifi-sec #Scenario-options {
-  display: none;
-}
-.gratis-wifi-sec #uden-VP-option {
-  display: none;
-}
-.gratis-wifi-sec #Logind-uden-tænker {
-  display: none;
-}
-.gratis-wifi-sec #brug-vpn {
-  display: none;
-}
-.gratis-wifi-sec #hotspot {
-  display: block;
-}
-.gratis-wifi-sec #tjek-netværk {
-  display: none;
 }
 .gratis-wifi-sec .fa-x {
   color: red;
@@ -424,6 +411,29 @@ nav .fa-phone {
 .gratis-wifi-sec .fa-check {
   color: green;
   font-size: 20px;
+}
+.gratis-wifi-sec .fa-message {
+  font-size: 20px;
+}
+.gratis-wifi-sec .fa-face-smile {
+  color: green;
+}
+.gratis-wifi-sec span {
+  font-weight: bold;
+}
+.gratis-wifi-sec h2 {
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 2em;
+}
+.gratis-wifi-sec .ops {
+  color: red;
+}
+.gratis-wifi-sec .paspå {
+  color: rgb(243, 193, 11);
+}
+.gratis-wifi-sec .godtvælg {
+  color: green;
 }
 
 /* tablet og  mobile  */

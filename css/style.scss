@@ -373,15 +373,22 @@ nav{
 
             
 
-        .test-options{
+        .stage{
             @include partial.flex($align:center);
             flex-direction: column;
+            display: none;
+
+            &.active{
+                display: block;
+            }
+        
             
             p{
                 font-size: 18px;
-                padding-bottom: 10px;
+                padding-bottom: 20px;
                 text-align: center;
                 line-height: 20px;
+                margin-left: 20px;
             }
 
             div{
@@ -390,7 +397,7 @@ nav{
                 gap:20px;
                
 
-                button{
+                .btn{
                     width:200px;
                     height:40px;
                     color:partial.$primary-color;
@@ -401,30 +408,6 @@ nav{
                 }
             }
 
-        }
-
-        #Scenario-options{
-            display: none;
-        }
-
-        #uden-VP-option{
-            display: none;
-        }
-        
-        #Logind-uden-tænker{
-            display:none;
-        }
-
-        #brug-vpn{
-            display:none;
-        }
-
-        #hotspot{
-            display:block;
-        }
-    
-        #tjek-netværk{
-            display: none;
         }
 
         .fa-x{
@@ -441,6 +424,35 @@ nav{
         .fa-check{
             color:green;
             font-size: 20px;
+        }
+
+        .fa-message{
+           font-size: 20px;
+        }
+
+        .fa-face-smile{
+            color:green;
+        }
+
+        span{
+            font-weight: bold;
+        }
+
+        h2{
+            text-align: center;
+            font-size: 22px;
+            padding-bottom: 2em;
+        }
+        .ops{
+            color:red;
+        }
+
+        .paspå{
+            color:rgb(243, 193, 11);
+        }
+
+        .godtvælg{
+            color: green;
         }
   
     }
