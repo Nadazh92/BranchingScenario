@@ -400,6 +400,15 @@ nav .fa-phone {
   background-color: #fff;
   border-radius: 5px;
 }
+.gratis-wifi-sec .stage label {
+  font-size: 20px;
+}
+.gratis-wifi-sec .stage input[type=text], .gratis-wifi-sec .stage input[type=email] {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #0F1C70;
+  border-radius: 5px;
+}
 .gratis-wifi-sec .fa-x {
   color: red;
   font-size: 20px;

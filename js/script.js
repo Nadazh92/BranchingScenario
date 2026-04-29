@@ -12,45 +12,89 @@
 
 // -------------------scenario---------------
 
-const allBtns=document.querySelectorAll(".stage .btn");
-const allStages=document.querySelectorAll(".stage");
+const allBtns = document.querySelectorAll(".stage .btn");
+const allStages = document.querySelectorAll(".stage");
 
-function scenario(e){
+
+function scenario(e) {
     console.log(e.target.textContent);
-    const btnContent=e.target.textContent;
+    const btnContent = e.target.textContent;
 
-    if(btnContent==="Brug åbent WiFi uden VPN"){
+    if (btnContent === "Start") {
+        let personName= document.querySelector("#pname").value;
+        console.log(personName);
+        let emil= document.querySelector("#emil").value;
+        console.log(emil);
+            if (personName === "" ||  emil === ""){
+                console.log("Error");
+             }
+            else {
+                allStages[0].classList.remove("active");
+                 allStages[1].classList.add("active");}
+
+    } else if (btnContent === "Brug åbent WiFi uden VPN") {
+        allStages[1].classList.remove("active");
+        allStages[2].classList.add("active");
+
+    } else if (btnContent === "Log ind uden at tænke") {
+        allStages[2].classList.remove("active");
+        allStages[3].classList.add("active");
+
+    } else if (btnContent === "Brug VPN") {
+        allStages[2].classList.remove("active");
+        allStages[4].classList.add("active");
+
+    } else if (btnContent === "Tjek Netværk") {
+        allStages[1].classList.remove("active");
+        allStages[5].classList.add("active");
+
+    } else if (btnContent === "Vælg det første") {
+        allStages[5].classList.remove("active");
+        allStages[6].classList.add("active");
+
+    } else if (btnContent === "Spørg personalet") {
+        allStages[5].classList.remove("active");
+        allStages[7].classList.add("active");
+
+    } else if (btnContent === "Undgå WiFi") {
+        allStages[5].classList.remove("active");
+        allStages[8].classList.add("active");
+
+    } else if (btnContent === "Brug Hotspot") {
+        allStages[1].classList.remove("active");
+        allStages[9].classList.add("active");
+
+    } else if (btnContent === "Start Forfra") {
         allStages[0].classList.remove("active");
+        allStages[2].classList.remove("active");
+        allStages[3].classList.remove("active");
+        allStages[4].classList.remove("active");
+        allStages[5].classList.remove("active");
+        allStages[6].classList.remove("active");
+        allStages[7].classList.remove("active");
+        allStages[8].classList.remove("active");
+        allStages[9].classList.remove("active");
         allStages[1].classList.add("active");
 
-    }else if (btnContent==="Log ind uden at tænke"){
-            allStages[1].classList.remove("active");
-            allStages[2].classList.add("active");
+    } else  if(btnContent === "Tilbage"){
+        allStages[3].classList.remove("active");
+        allStages[4].classList.remove("active");
+        allStages[2].classList.add("active");
 
-    } else if (btnContent==="Brug VPN"){
-                allStages[1].classList.remove("active");
-                allStages[3].classList.add("active");
+    } else  if(btnContent === "tilbage"){
+        allStages[6].classList.remove("active");
+        allStages[7].classList.remove("active");
+        allStages[8].classList.remove("active");
+        allStages[5].classList.add("active");
 
-    } else if (btnContent==="Tjek Netværk"){
-                allStages[0].classList.remove("active");
-                allStages[4].classList.add("active");
-
-    } else if (btnContent==="Brug Hotspot"){
-                 allStages[0].classList.remove("active");
-                 allStages[5].classList.add("active");
-
-    } else if (btnContent==="Start Forfra") {
-                    allStages[2].classList.remove("active");
-                    allStages[3].classList.remove("active");
-                    allStages[5].classList.remove("active");
-                    allStages[0].classList.add("active");
-               
-    } else {
+    }else {
+        
         console.log("Error");
-
     }
+
 }
 
-for (btn of allBtns){
+
+for (btn of allBtns) {
     btn.addEventListener("click", scenario);
 }

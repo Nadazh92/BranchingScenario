@@ -408,6 +408,19 @@ nav{
                 }
             }
 
+            
+                label{
+                    font-size: 20px;
+                }
+
+                input[type=text], input[type=email]{
+                    width:300px;
+                    height:30px;
+                    border: 2px solid partial.$primary-color;
+                    border-radius: 5px;
+                }
+            
+
         }
 
         .fa-x{
