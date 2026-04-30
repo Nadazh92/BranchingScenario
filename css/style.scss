@@ -391,6 +391,7 @@ nav{
                 margin-left: 20px;
             }
 
+
             div{
                 @include partial.flex($align:center);
                 flex-direction: column;
@@ -419,9 +420,20 @@ nav{
                     border: 2px solid partial.$primary-color;
                     border-radius: 5px;
                 }
-            
+
+                h2{
+                  color:partial.$hover;
+                }
+
+                #eror{
+                    color:red;
+                }
+
+             
 
         }
+
+        
 
         .fa-x{
             color:red;

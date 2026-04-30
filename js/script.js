@@ -22,13 +22,21 @@ function scenario(e) {
 
     if (btnContent === "Start") {
         let personName= document.querySelector("#pname").value;
-        console.log(personName);
+        // console.log(personName);
         let emil= document.querySelector("#emil").value;
-        console.log(emil);
+        // console.log(emil);
             if (personName === "" ||  emil === ""){
-                console.log("Error");
+                // console.log("Error");
+                 document.getElementById("eror").innerText="Please Indtast dit navn og din email";
              }
-            else {
+            else if(personName.length < 2){
+                     document.getElementById("eror").innerText="Indtast din navn";
+                
+             }else if(!emil.includes("@") && !emil.includes(".")){
+                        document.getElementById("eror").innerText="E-mail er ugyldig";
+
+                }else{
+                document.getElementById("welcome").innerHTML=`Velkommen ${personName}, til testen`;
                 allStages[0].classList.remove("active");
                  allStages[1].classList.add("active");}
 
