@@ -405,6 +405,7 @@ nav{
                     font-size: 14px;
                     font-weight: bold;
                     background-color: partial.$secondary-color;
+                    border: 2px solid partial.$primary-color;
                     border-radius: 5px;
                 }
             }
@@ -421,7 +422,7 @@ nav{
                     border-radius: 5px;
                 }
 
-                h2{
+                #welcome{
                   color:partial.$hover;
                 }
 

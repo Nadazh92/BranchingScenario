@@ -398,6 +398,7 @@ nav .fa-phone {
   font-size: 14px;
   font-weight: bold;
   background-color: #fff;
+  border: 2px solid #0F1C70;
   border-radius: 5px;
 }
 .gratis-wifi-sec .stage label {
@@ -409,7 +410,7 @@ nav .fa-phone {
   border: 2px solid #0F1C70;
   border-radius: 5px;
 }
-.gratis-wifi-sec .stage h2 {
+.gratis-wifi-sec .stage #welcome {
   color: purple;
 }
 .gratis-wifi-sec .stage #eror {

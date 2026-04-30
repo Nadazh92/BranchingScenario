@@ -1,13 +1,3 @@
-// ------------navigationen-------------
-// const bars = document.querySelector("#bars");
-
-// const openNav = () => {
-//     document.querySelector("header > nav > ul").classList.toggle("show");
-//     document.querySelector("#bars i").classList.toggle("fa-bars");
-//     document.querySelector("#bars i").classList.toggle("fa-xmark");
-// }
-
-// bars.addEventListener("click", openNav);
 
 
 // -------------------scenario---------------
@@ -106,3 +96,15 @@ function scenario(e) {
 for (btn of allBtns) {
     btn.addEventListener("click", scenario);
 }
+
+
+// ------------navigationen-------------
+const bars = document.querySelector("#bars");
+
+const openNav = () => {
+    document.querySelector("header > nav > ul").classList.toggle("show");
+    document.querySelector("#bars i").classList.toggle("fa-bars");
+    document.querySelector("#bars i").classList.toggle("fa-xmark");
+}
+
+bars.addEventListener("click", openNav);
