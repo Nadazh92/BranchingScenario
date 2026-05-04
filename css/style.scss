@@ -433,6 +433,89 @@ nav{
              
 
         }
+        // --------------------Test 2 siden-----------------------
+
+        .level{
+            @include partial.flex($align:center);
+            flex-direction: column;
+            display: none;
+           
+
+            &.activee{
+                display: block;
+            }
+        
+            
+            p{
+                font-size: 18px;
+                padding-bottom: 20px;
+                text-align: center;
+                line-height: 20px;
+                margin-left: 20px;
+            }
+
+
+            div{
+                @include partial.flex($align:center);
+                flex-direction: column;
+                gap:20px;
+                
+
+                
+               
+                    .bttn{
+                    width:200px;
+                    height:40px;
+                    color:partial.$primary-color;
+                    font-size: 14px;
+                    font-weight: bold;
+                    background-color: partial.$secondary-color;
+                    border: 2px solid partial.$primary-color;
+                    border-radius: 5px;
+                     @include partial.flex($align:center);
+                     flex-direction: column ;
+                     margin-bottom: 20px;
+                    
+                     
+                   
+                }
+
+              
+            }
+
+            
+                label{
+                    font-size: 20px;
+                }
+
+                input[type=text], input[type=email]{
+                    width:300px;
+                    height:30px;
+                    border: 2px solid partial.$primary-color;
+                    border-radius: 5px;
+                }
+
+                .welcome{
+                  color:partial.$hover;
+                }
+
+                #eror{
+                    color:red;
+                }
+
+                
+
+                
+
+             
+
+        }
+
+
+
+
+
+        // ---------------------- slut Test 2 siden--------------
 
         
 

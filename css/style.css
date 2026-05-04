@@ -416,6 +416,60 @@ nav .fa-phone {
 .gratis-wifi-sec .stage #eror {
   color: red;
 }
+.gratis-wifi-sec .level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+.gratis-wifi-sec .level.activee {
+  display: block;
+}
+.gratis-wifi-sec .level p {
+  font-size: 18px;
+  padding-bottom: 20px;
+  text-align: center;
+  line-height: 20px;
+  margin-left: 20px;
+}
+.gratis-wifi-sec .level div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.gratis-wifi-sec .level div .bttn {
+  width: 200px;
+  height: 40px;
+  color: #0F1C70;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: #fff;
+  border: 2px solid #0F1C70;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.gratis-wifi-sec .level label {
+  font-size: 20px;
+}
+.gratis-wifi-sec .level input[type=text], .gratis-wifi-sec .level input[type=email] {
+  width: 300px;
+  height: 30px;
+  border: 2px solid #0F1C70;
+  border-radius: 5px;
+}
+.gratis-wifi-sec .level .welcome {
+  color: purple;
+}
+.gratis-wifi-sec .level #eror {
+  color: red;
+}
 .gratis-wifi-sec .fa-x {
   color: red;
   font-size: 20px;
