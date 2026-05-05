@@ -338,11 +338,16 @@ nav .fa-phone {
 }
 
 .styl-gåTilbage {
-  margin-top: 50px;
+  text-align: center;
+  margin-top: 2em;
 }
 .styl-gåTilbage a {
   text-decoration: none;
   color: #0F1C70;
+}
+.styl-gåTilbage a:hover {
+  text-decoration: underline;
+  color: purple;
 }
 
 .styl-GWPC {
@@ -367,68 +372,20 @@ nav .fa-phone {
   height: 50vh;
   width: 100%;
 }
-.gratis-wifi-sec .stage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  display: none;
-}
-.gratis-wifi-sec .stage.active {
-  display: block;
-}
-.gratis-wifi-sec .stage p {
-  font-size: 18px;
-  padding-bottom: 20px;
-  text-align: center;
-  line-height: 20px;
-  margin-left: 20px;
-}
-.gratis-wifi-sec .stage div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-}
-.gratis-wifi-sec .stage div .btn {
-  width: 200px;
-  height: 40px;
-  color: #0F1C70;
-  font-size: 14px;
-  font-weight: bold;
-  background-color: #fff;
-  border: 2px solid #0F1C70;
-  border-radius: 5px;
-}
-.gratis-wifi-sec .stage label {
-  font-size: 20px;
-}
-.gratis-wifi-sec .stage input[type=text], .gratis-wifi-sec .stage input[type=email] {
-  width: 300px;
-  height: 30px;
-  border: 2px solid #0F1C70;
-  border-radius: 5px;
-}
-.gratis-wifi-sec .stage #welcome {
-  color: purple;
-}
-.gratis-wifi-sec .stage #eror {
-  color: red;
-}
 .gratis-wifi-sec .level {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  align-items: center;
   display: none;
 }
 .gratis-wifi-sec .level.activee {
-  display: block;
+  display: flex;
 }
 .gratis-wifi-sec .level p {
   font-size: 18px;
-  padding-bottom: 20px;
+  padding-bottom: 5px;
   text-align: center;
   line-height: 20px;
   margin-left: 20px;
@@ -438,7 +395,13 @@ nav .fa-phone {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+}
+.gratis-wifi-sec .level div .styl-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
 }
 .gratis-wifi-sec .level div .bttn {
   width: 200px;
@@ -455,54 +418,35 @@ nav .fa-phone {
   flex-direction: column;
   margin-bottom: 20px;
 }
-.gratis-wifi-sec .level label {
+.gratis-wifi-sec .level div label {
   font-size: 20px;
 }
-.gratis-wifi-sec .level input[type=text], .gratis-wifi-sec .level input[type=email] {
+.gratis-wifi-sec .level div input[type=text], .gratis-wifi-sec .level div input[type=email] {
   width: 300px;
   height: 30px;
   border: 2px solid #0F1C70;
   border-radius: 5px;
 }
-.gratis-wifi-sec .level .welcome {
+.gratis-wifi-sec .level div #eror {
+  color: red;
+}
+.gratis-wifi-sec .level div .welcome {
   color: purple;
 }
-.gratis-wifi-sec .level #eror {
-  color: red;
-}
-.gratis-wifi-sec .fa-x {
-  color: red;
-  font-size: 20px;
-}
-.gratis-wifi-sec .fa-triangle-exclamation {
-  color: rgb(243, 193, 11);
-  font-size: 20px;
-}
-.gratis-wifi-sec .fa-check {
-  color: green;
-  font-size: 20px;
-}
-.gratis-wifi-sec .fa-message {
-  font-size: 20px;
-}
-.gratis-wifi-sec .fa-face-smile {
-  color: green;
-}
-.gratis-wifi-sec span {
+.gratis-wifi-sec .level div span {
   font-weight: bold;
 }
-.gratis-wifi-sec h2 {
+.gratis-wifi-sec .level div h2 {
   text-align: center;
   font-size: 22px;
-  padding-bottom: 2em;
 }
-.gratis-wifi-sec .ops {
+.gratis-wifi-sec .level div .ops {
   color: red;
 }
-.gratis-wifi-sec .paspå {
+.gratis-wifi-sec .level div .paspå {
   color: rgb(243, 193, 11);
 }
-.gratis-wifi-sec .godtvælg {
+.gratis-wifi-sec .level div .godtvælg {
   color: green;
 }
 
@@ -553,7 +497,7 @@ nav .fa-phone {
     border: solid 1px #fff;
   }
   .awa-sec {
-    padding: 2em 5em;
+    padding: 2em 2em;
   }
   .awa-sec h1 {
     font-size: 30px;
@@ -562,17 +506,28 @@ nav .fa-phone {
     flex-wrap: wrap;
     gap: 2em;
   }
+  .awa-sec .test-container div {
+    width: 100%;
+  }
+  .awa-sec .test-container a {
+    display: block;
+  }
   .blivKlogere-sec {
     flex-wrap: wrap;
   }
   .blivKlogere-sec .text-container {
     gap: 5px;
+    order: 2;
   }
   .blivKlogere-sec .text-container h1 {
     font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .blivKlogere-sec a {
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .godeRåd-sec {
     flex-wrap: wrap;

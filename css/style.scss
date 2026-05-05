@@ -339,15 +339,20 @@ nav{
     }
 
 
-    // -------------Test siden--------------
+    // -------------Test2 siden--------------
 
     .styl-gåTilbage{
-        margin-top: 50px;
+        text-align: center;
+        margin-top: 2em;
         a{
             text-decoration: none;
             color: partial.$primary-color;
+            
+            &:hover{text-decoration: underline;
+                    color:partial.$hover;}
         }
     }
+
     .styl-GWPC{
         color: partial.$primary-color;
         text-align: center;
@@ -371,84 +376,23 @@ nav{
                 width:100%;
             }
 
-            
-
-        .stage{
-            @include partial.flex($align:center);
-            flex-direction: column;
-            display: none;
-
-            &.active{
-                display: block;
-            }
-        
-            
-            p{
-                font-size: 18px;
-                padding-bottom: 20px;
-                text-align: center;
-                line-height: 20px;
-                margin-left: 20px;
-            }
-
-
-            div{
-                @include partial.flex($align:center);
-                flex-direction: column;
-                gap:20px;
-               
-
-                .btn{
-                    width:200px;
-                    height:40px;
-                    color:partial.$primary-color;
-                    font-size: 14px;
-                    font-weight: bold;
-                    background-color: partial.$secondary-color;
-                    border: 2px solid partial.$primary-color;
-                    border-radius: 5px;
-                }
-            }
-
-            
-                label{
-                    font-size: 20px;
-                }
-
-                input[type=text], input[type=email]{
-                    width:300px;
-                    height:30px;
-                    border: 2px solid partial.$primary-color;
-                    border-radius: 5px;
-                }
-
-                #welcome{
-                  color:partial.$hover;
-                }
-
-                #eror{
-                    color:red;
-                }
-
-             
-
-        }
-        // --------------------Test 2 siden-----------------------
 
         .level{
             @include partial.flex($align:center);
             flex-direction: column;
+            align-items: center;
             display: none;
            
 
             &.activee{
-                display: block;
+                // display: block;
+                display: flex;
             }
         
             
             p{
                 font-size: 18px;
-                padding-bottom: 20px;
+                padding-bottom: 5px;
                 text-align: center;
                 line-height: 20px;
                 margin-left: 20px;
@@ -458,11 +402,15 @@ nav{
             div{
                 @include partial.flex($align:center);
                 flex-direction: column;
-                gap:20px;
-                
-
-                
                
+
+                    .styl-login{
+                    @include partial.flex($align:center);
+                    flex-direction: column;
+                     gap:10px;
+
+                    }
+        
                     .bttn{
                     width:200px;
                     height:40px;
@@ -474,16 +422,9 @@ nav{
                     border-radius: 5px;
                      @include partial.flex($align:center);
                      flex-direction: column ;
-                     margin-bottom: 20px;
-                    
-                     
-                   
+                     margin-bottom: 20px;   
                 }
 
-              
-            }
-
-            
                 label{
                     font-size: 20px;
                 }
@@ -495,74 +436,39 @@ nav{
                     border-radius: 5px;
                 }
 
-                .welcome{
-                  color:partial.$hover;
-                }
-
                 #eror{
                     color:red;
                 }
 
-                
+                .welcome{
+                  color:partial.$hover;
+                }
 
-                
-
-             
-
-        }
-
-
-
-
-
-        // ---------------------- slut Test 2 siden--------------
-
-        
-
-        .fa-x{
-            color:red;
-            font-size: 20px;
-           
-        }
-
-        .fa-triangle-exclamation{
-            color:rgb(243, 193, 11);
-            font-size: 20px;
-        }
-
-        .fa-check{
-            color:green;
-            font-size: 20px;
-        }
-
-        .fa-message{
-           font-size: 20px;
-        }
-
-        .fa-face-smile{
-            color:green;
-        }
-
-        span{
+            span{
             font-weight: bold;
-        }
-
-        h2{
+            }
+        
+            h2{
             text-align: center;
             font-size: 22px;
-            padding-bottom: 2em;
-        }
-        .ops{
+            }
+
+            .ops{
             color:red;
-        }
+            }
 
-        .paspå{
+            .paspå{
             color:rgb(243, 193, 11);
-        }
+             }
 
-        .godtvælg{
+            .godtvælg{
             color: green;
+            }
+         
+            }
+
         }
+   
   
     }
 
@@ -627,15 +533,23 @@ nav{
 // ----------Awareness Træning------------
 
 .awa-sec{
-    padding: 2em 5em;
+    padding: 2em 2em;
+    
         h1{
             
             font-size: 30px;  
         }
 
-        .test-container{
+        .test-container {
             flex-wrap: wrap;
             gap:2em;
+                div{
+                    width:100%;
+                }
+            
+            a{
+                display: block;
+            }
 }
 }
 
@@ -643,18 +557,24 @@ nav{
 
 .blivKlogere-sec{
     flex-wrap: wrap;
+    
 
     .text-container{
         gap:5px;
+        order: 2;
 
         h1{
             font-size: 22px;
+            margin-left: auto;
+            margin-right: auto;
             
         }
     }
 
     a{
         margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
