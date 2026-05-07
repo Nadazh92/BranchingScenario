@@ -102,7 +102,7 @@ function test (e){
 
             case "Log ind uden at tænke":
                 h2Text="Ups et usikkert vælg!";
-                pText="Du logger ind på et falsk netværk. En hacker opsnapper dine loginoplysninger <br><br> <span>Feedback:</span> offentlige WiFi kan være usikre , sær uden kryptering";
+                pText="Du logger ind på et falsk netværk. En hacker opsnapper dine loginoplysninger <br><br> <span>Feedback:</span> offentlige WiFi kan være usikre , især uden kryptering";
                 btnText=["Start Forfra","Tilbage"];
                 break;
 

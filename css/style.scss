@@ -99,6 +99,7 @@ nav{
 .styl-heroOverskrift{
     position:absolute;
     color:partial.$primary-color;
+    // color: rgba(15,28,112,1.0);
     background-color: partial.$secondary-color;
     opacity: 70%;
     border: 2px solid partial.$secondary-color;
@@ -523,6 +524,7 @@ nav{
     font-size: 15px;
     top:12em;
     left: 3em;
+    
 
     .styl-btn{
     @include partial.btn(15px 60px 15px 60px);
@@ -634,7 +636,7 @@ nav{
     }
 }
 
-// ---------------------------------------------test siden-----------------------------
+// ---------------------------------------------test2 siden-----------------------------
     .gratis-wifi-sec{
         flex-wrap: wrap;
         gap:0em;
